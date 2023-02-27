@@ -37,6 +37,14 @@ const CONFIG = {
     config: {
       measurementId: process.env.GOOGLE_MEASUREMENT_ID || "",
     },
+  },  
+  utterances: {
+    enable: true,
+    config: {
+      repo: "nvbinh15/morethan-log",
+      "issue-term": "og:title",
+      label: "💬 Utterances",
+    },
   },
   googleSearchConsole: {
     enable: false,
