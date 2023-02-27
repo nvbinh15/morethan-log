@@ -1,13 +1,13 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: 'morethanmin',
-    image: '/avatar.svg',  // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: 'frontend developer',
+    name: 'nvbinh',
+    image: '/binh.png',  // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    role: 'Machine Learning / Software Engineer',
     bio: 'I develop everything using node.',
-    email: 'morethanmin.dev@gmail.com',
-    linkedin: 'morethanmin',
-    github: 'morethanmin',
+    email: 'nguyen.binh@u.nus.edu',
+    linkedin: 'nvbinh',
+    github: 'nvbinh15',
     instagram: '',
   },
   projects: [
@@ -18,8 +18,8 @@ const CONFIG = {
   ],
   // blog setting (required)
   blog: {
-    title: 'morethan-log',
-    description: 'welcome to morethan-log!',
+    title: "Binh's Blog",
+    description: "Welcome to Binh's Blog",
     theme: 'light' // ['light', 'dark', 'auto']
   },
 
