@@ -8,7 +8,7 @@ class MyDocument extends Document {
       <Html lang={CONFIG.lang}>
         <Head>
           <link
-            rel="preload"
+            rel="stylesheet"
             as="font"
             href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css"
           />
@@ -16,7 +16,7 @@ class MyDocument extends Document {
           <link
             rel="apple-touch-icon"
             sizes="192x192"
-            href="/apple-touch-icon.png"
+            href="/binh.png"
           ></link>
           <link
             rel="alternate"

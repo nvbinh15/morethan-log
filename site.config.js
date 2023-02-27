@@ -1,25 +1,29 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    image: '/binh.png',  // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    email: 'nguyen.binh@u.nus.edu',
-    linkedin: 'nvbinh',
-    github: 'nvbinh15',
-    instagram: '',
+    name: "Binh",
+    image: "/binh.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    role: "",
+    bio: "",
+    email: "nguyen.binh@u.nus.edu",
+    linkedin: "nvbinh",
+    github: "nvbinh15",
+    instagram: "",
   },
   // blog setting (required)
   blog: {
-    title: "Binh's Blog",
-    description: "Welcome to Binh's Blog",
-    theme: 'light' // ['light', 'dark', 'auto']
+    title: "nvbinh-log",
+    description: "welcome to Binh's blog!",
+    theme: "light", // ['light', 'dark', 'auto']
   },
 
   // CONFIG configration (required)
-  link: 'https://morethan-log.vercel.app',
+  link: "https://nvbinh-blog.vercel.app/",
   since: 2023, // If leave this empty, current year will be used.
-  lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
+  lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
+  ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
   seo: {
-    keywords: ['Blog', 'Website', 'Notion'],
+    keywords: ["Blog", "Website", "Notion"],
   },
 
   // notion configuration (required)
@@ -31,15 +35,22 @@ const CONFIG = {
   googleAnalytics: {
     enable: false,
     config: {
-      measurementId: process.env.GOOGLE_MEASUREMENT_ID || ''
-    }
+      measurementId: process.env.GOOGLE_MEASUREMENT_ID || "",
+    },
   },
   googleSearchConsole: {
     enable: false,
     config: {
-      siteVerification: process.env.GOOGLE_SITE_VERIFICATION || ''
-    }
+      siteVerification: process.env.GOOGLE_SITE_VERIFICATION || "",
+    },
   },
-  isProd: process.env.VERCEL_ENV === 'production' // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
+  cusdis: {
+    enable: false,
+    config: {
+      host: "https://cusdis.com",
+      appid: "", // Embed Code -> data-app-id value
+    },
+  },
+  isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
 }
 module.exports = CONFIG
