@@ -10,6 +10,8 @@ const CONFIG = {
     github: "nvbinh15",
     instagram: "",
   },
+  projects: [
+  ],
   // blog setting (required)
   blog: {
     title: "nvbinh-log",
